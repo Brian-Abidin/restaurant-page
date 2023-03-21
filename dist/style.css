@@ -1,0 +1,23 @@
+.title {
+  color: green;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aquamarine;
+  height: 100px;
+
+}
+
+.title{
+  min-width: 120px;
+  
+}
+
+ul{
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
