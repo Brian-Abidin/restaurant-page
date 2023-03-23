@@ -12,15 +12,37 @@ const emptyheader = document.createElement("div");
 const frontImage = document.createElement("div");
 const description = document.createElement("div");
 const descText = document.createElement("div");
+const descText2 = document.createElement("div");
 const descTitle = document.createElement("p");
 const descImage = document.createElement("div");
 const footer = document.createElement("footer");
 const image1 = document.createElement("img");
 const image2 = document.createElement("img");
 
+/* add class tags */
+wrapper.classList.add("wrapper");
+header.classList.add("header");
+title.classList.add("title");
+rightlinks.classList.add("rightlinks");
+home.classList.add("home");
+menu.classList.add("menu");
+contact.classList.add("contact");
+emptyheader.classList.add("emptyheader");
+frontImage.classList.add("frontImage");
+description.classList.add("description");
+descText.classList.add("descText");
+descText2.classList.add("descText2");
+descTitle.classList.add("descTitle");
+descImage.classList.add("descImage");
+footer.classList.add("footer");
+image1.classList.add("image1");
+image2.classList.add("image2");
+
+
 window.addEventListener("load", (event) => {
     content.appendChild(wrapper);
 
+    /* wrapper */
     wrapper.appendChild(header);
     wrapper.appendChild(frontImage);
     wrapper.appendChild(description);
@@ -48,11 +70,14 @@ window.addEventListener("load", (event) => {
 
     /* description */
     description.appendChild(descText);
-    description.appendChild(descTitle);
     description.appendChild(descImage);
 
-    descText.textContent = "Our food is made from fresh daily with the finest ingredients local to the area! Red Lobsters, Blue Oysters, Jumbo Shrimp, Fried Calamari, Filet Mingon, Ribeye, and more. From the surf to the turf and every delicious dish in between, this restuarant offers it all!"
+    descText.appendChild(descTitle);
+    descText.appendChild(descText2)
+
     descTitle.textContent = "Delicious Food Awaits!";
+    descText2.textContent = "Our food is made from fresh daily with the finest ingredients local to the area! Red Lobsters, Blue Oysters, Jumbo Shrimp, Fried Calamari, Filet Mingon, Ribeye, and more. From the surf to the turf and every delicious dish in between, this restuarant offers it all!"
+   
 
     descImage.appendChild(image2);
     image2.src = "./images/seafood.jpg"
