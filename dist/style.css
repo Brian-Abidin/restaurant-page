@@ -38,10 +38,10 @@ button{
 }
 
 .home:hover, .menu:hover, .contact:hover{
-  background-color: rgb(187, 151, 52);
-  color: white;
+  /* background-color: rgb(187, 151, 52); */
+  /* color: white;
   cursor:grab;
-  border-radius: 10px;
+  border-radius: 10px; */
   border-bottom: 5px solid black;
 }
 
