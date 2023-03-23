@@ -9,6 +9,7 @@ const home = document.createElement("button");
 const menu = document.createElement("button");
 const contact = document.createElement("button");
 const emptyheader = document.createElement("div");
+const midsection = document.createElement("div");
 const frontImage = document.createElement("div");
 const description = document.createElement("div");
 const descText = document.createElement("div");
@@ -28,6 +29,7 @@ home.classList.add("home");
 menu.classList.add("menu");
 contact.classList.add("contact");
 emptyheader.classList.add("emptyheader");
+midsection.classList.add("midsection");
 frontImage.classList.add("frontImage");
 description.classList.add("description");
 descText.classList.add("descText");
@@ -44,8 +46,7 @@ window.addEventListener("load", (event) => {
 
     /* wrapper */
     wrapper.appendChild(header);
-    wrapper.appendChild(frontImage);
-    wrapper.appendChild(description);
+    wrapper.appendChild(midsection);
     wrapper.appendChild(footer);
 
     /* header */
@@ -63,6 +64,36 @@ window.addEventListener("load", (event) => {
     menu.textContent = "Menu";
     contact.textContent = "Contact";
 
+    /* midsection */
+    midsection.appendChild(frontImage);
+    midsection.appendChild(description);
+
+    frontImage.appendChild(image1);
+    image1.src = "./images/surfandturf.jpeg";
+    image1.alt = "black plate on a table that includes cooked lobster cut in half on the left, a baked potato cut up in the middle, and a steak cut in slices on the right"
+
+    /* description */
+    description.appendChild(descText);
+    description.appendChild(descImage);
+
+    descText.appendChild(descTitle);
+    descText.appendChild(descText2)
+
+    descTitle.textContent = "Delicious Food Awaits!";
+    descText2.textContent = "Our food is made from fresh daily with the finest ingredients local to the area! Red Lobsters, Blue Oysters, Jumbo Shrimp, Fried Calamari, Filet Mingon, Ribeye, and more. From the surf to the turf and every delicious dish in between, this restuarant offers it all!"
+   
+    descImage.appendChild(image2);
+    image2.src = "./images/seafood.jpg"
+    image2.alt = "bowl of seafood including lobster, shrimp, small octopus, over a bed of lettuce."
+
+    /* footer */
+    footer.textContent = "The Odin Project 2023";
+});
+
+home.addEventListener("click", () => {
+    midsection.appendChild(frontImage);
+    midsection.appendChild(description);
+
     /* front image */
     frontImage.appendChild(image1);
     image1.src = "./images/surfandturf.jpeg";
@@ -78,15 +109,8 @@ window.addEventListener("load", (event) => {
     descTitle.textContent = "Delicious Food Awaits!";
     descText2.textContent = "Our food is made from fresh daily with the finest ingredients local to the area! Red Lobsters, Blue Oysters, Jumbo Shrimp, Fried Calamari, Filet Mingon, Ribeye, and more. From the surf to the turf and every delicious dish in between, this restuarant offers it all!"
    
-
     descImage.appendChild(image2);
     image2.src = "./images/seafood.jpg"
     image2.alt = "bowl of seafood including lobster, shrimp, small octopus, over a bed of lettuce."
-
-    /* footer */
-    footer.textContent = "The Odin Project 2023";
 });
-
-
-
 
