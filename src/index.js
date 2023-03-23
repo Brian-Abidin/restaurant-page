@@ -90,7 +90,29 @@ window.addEventListener("load", (event) => {
     footer.textContent = "The Odin Project 2023";
 });
 
+function addStyle(text){
+    const button = text;
+    button.style.borderBottom = "5px solid Black";
+    button.style.backgroundColor = "rgb(187, 151, 52)";
+    button.style.color = "white";
+    button.style.borderRadius = "10px";
+}
+
+function removeStyle(text){
+    const button = text;
+    button.style.borderBottom = "";
+    button.style.backgroundColor = "";
+    button.style.color = "";
+    button.style.borderRadius = "";
+}
+
 home.addEventListener("click", () => {
+    removeStyle(menu);
+    removeStyle(contact);
+    addStyle(home);
+
+    midsection.replaceChildren();
+
     midsection.appendChild(frontImage);
     midsection.appendChild(description);
 
@@ -114,3 +136,23 @@ home.addEventListener("click", () => {
     image2.alt = "bowl of seafood including lobster, shrimp, small octopus, over a bed of lettuce."
 });
 
+menu.addEventListener("click", ()=> {
+    removeStyle(home);
+    removeStyle(contact);
+    addStyle(menu);
+
+
+    midsection.replaceChildren();
+
+    midsection.textContent = "HELLO THERE"
+});
+
+contact.addEventListener("click", ()=> {
+    removeStyle(home);
+    removeStyle(menu);
+    addStyle(contact);
+
+    midsection.replaceChildren();
+
+    midsection.textContent = "Hello World";
+})
