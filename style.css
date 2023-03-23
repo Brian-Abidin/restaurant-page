@@ -41,13 +41,14 @@ button{
   background-color: rgb(187, 151, 52);
   color: white;
   cursor:grab;
+  border-radius: 10px;
 }
 
 .socials{
   margin-right: 30px;
 }
 
-.front_image{
+.frontImage{
   margin: 0;
   padding: 0;
 }
@@ -64,12 +65,12 @@ button{
   margin-top: 10px;
 }
 
-.desc_title{
+.descTitle{
   font-size: 2.5rem;
   font-weight: 900;
 }
 
-.desc_text{
+.descText{
   text-align: center;
   font-size: 1.5rem;
   margin-left: 50px;
