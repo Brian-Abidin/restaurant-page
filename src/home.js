@@ -2,6 +2,9 @@
 home button is highlighted. DOM elements are 
 inside a function and the funciton runs on
 window load. */
+import seafood from "./images/seafood.jpg";
+import surfandturf from "./images/surfandturf.jpeg"
+
 
 console.log("Hello World");
 
@@ -123,7 +126,8 @@ function load(){
     midsection.appendChild(description);
 
     frontImage.appendChild(image1);
-    image1.src = "./images/surfandturf.jpeg";
+    // image1.src = "./images/surfandturf.jpeg";
+    image1.src = surfandturf;
     image1.alt = "black plate on a table that includes cooked lobster cut in half on the left, a baked potato cut up in the middle, and a steak cut in slices on the right"
 
     /* description */
@@ -137,7 +141,8 @@ function load(){
     descText2.textContent = "Our food is made from fresh daily with the finest ingredients local to the area! Red Lobsters, Blue Oysters, Jumbo Shrimp, Fried Calamari, Filet Mingon, Ribeye, and more. From the surf to the turf and every delicious dish in between, this restuarant offers it all!"
    
     descImage.appendChild(image2);
-    image2.src = "./images/seafood.jpg"
+    // image2.src = "./images/seafood.jpg"
+    image2.src = seafood;
     image2.alt = "bowl of seafood including lobster, shrimp, small octopus, over a bed of lettuce."
 
     /* footer */
@@ -190,25 +195,25 @@ home.addEventListener("click", () => {
     image2.alt = "bowl of seafood including lobster, shrimp, small octopus, over a bed of lettuce."
 });
 
-menu.addEventListener("click", ()=> {
-    removeStyle(home);
-    removeStyle(contact);
-    addStyle(menu);
+// menu.addEventListener("click", ()=> {
+//     removeStyle(home);
+//     removeStyle(contact);
+//     addStyle(menu);
 
 
-    midsection.replaceChildren();
+//     midsection.replaceChildren();
 
-    midsection.textContent = "HELLO THERE"
-});
+//     midsection.textContent = "HELLO THERE"
+// });
 
-contact.addEventListener("click", ()=> {
-    removeStyle(home);
-    removeStyle(menu);
-    addStyle(contact);
+// contact.addEventListener("click", ()=> {
+//     removeStyle(home);
+//     removeStyle(menu);
+//     addStyle(contact);
 
-    midsection.replaceChildren();
+//     midsection.replaceChildren();
 
-    midsection.textContent = "Hello World";
-})
+//     midsection.textContent = "Hello World";
+// })
 
 export default load;
