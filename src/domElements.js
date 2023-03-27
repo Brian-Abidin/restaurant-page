@@ -8,9 +8,19 @@ const menu = document.createElement("button");
 const contact = document.createElement("button");
 const emptyheader = document.createElement("div");
 const midsection = document.createElement("div");
-const leftMenu = document.createElement("div");
-const middleMenu = document.createElement("div");
-const rightMenu = document.createElement("div");
+
+const leftItem1= document.createElement("div");
+const middleItem1 = document.createElement("div");
+const rightItem1 = document.createElement("div");
+
+const leftItem2= document.createElement("div");
+const middleItem2 = document.createElement("div");
+const rightItem2 = document.createElement("div");
+
+const leftItem3 = document.createElement("div");
+const middleItem3 = document.createElement("div");
+const rightItem3 = document.createElement("div");
+
 const menuItem1 = document.createElement("div");
 const menuItem2 = document.createElement("div");
 const menuItem3 = document.createElement("div");
@@ -34,9 +44,19 @@ menu.classList.add("menu");
 contact.classList.add("contact");
 emptyheader.classList.add("emptyheader");
 midsection.classList.add("midsection");
-leftMenu.classList.add("leftMenu");
-middleMenu.classList.add("middleMenu");
-rightMenu.classList.add("rightMenu");
+
+leftItem1.classList.add("leftItem1");
+middleItem1.classList.add("middleItem1");
+rightItem1.classList.add("rightItem1");
+
+leftItem2.classList.add("leftItem2");
+middleItem2.classList.add("middleItem2");
+rightItem2.classList.add("rightItem2");
+
+leftItem3.classList.add("leftItem3");
+middleItem3.classList.add("middleItem3");
+rightItem3.classList.add("rightItem3");
+
 menuItem1.classList.add("menuItem1");
 menuItem2.classList.add("menuItem2");
 menuItem3.classList.add("menuItem3");
@@ -64,9 +84,15 @@ export {
     contact, 
     emptyheader,
     midsection,
-    leftMenu,
-    middleMenu,
-    rightMenu,
+    leftItem1,
+    middleItem1,
+    rightItem1,
+    leftItem2,
+    middleItem2,
+    rightItem2,
+    leftItem3,
+    middleItem3,
+    rightItem3,
     menuItem1,
     menuItem2,
     menuItem3,
