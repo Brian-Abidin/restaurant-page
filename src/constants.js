@@ -18,6 +18,7 @@ const footer = document.createElement("footer");
 const image1 = document.createElement("img");
 const image2 = document.createElement("img");
 
+content.classList.add("content")
 wrapper.classList.add("wrapper");
 header.classList.add("header");
 title.classList.add("title");
