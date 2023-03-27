@@ -55,8 +55,47 @@ button{
   height: 100%;
 }
 
-.midsection{
+.menuItem1, .menuItem2, .menuItem3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
 }
+
+.middleItem1{
+  font-size: 2rem;
+}
+
+.menuItem1{
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+
+
+.leftItem2{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.middleItem2{
+  font-size: 1.25rem;
+}
+
+.rightItem2{
+  width: 200px;
+  height: 200px;
+}
+
+
+
+/* .leftMenu, .middleMenu, .rightMenu{
+  font-size: larger;
+  font-weight: 700;
+  border: 5px solid black;
+  background-color: aqua;
+  height: 20vh;
+  width: 25vw;
+} */
 
 .description{
   display: grid;
