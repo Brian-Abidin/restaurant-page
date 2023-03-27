@@ -1,13 +1,13 @@
-import {home, menu, contact, midsection} from  "./constants"
+import {home, menu, contact, midsection} from  "./domElements"
 import removeStyle from "./functions/removeStyle"
 import addStyle from "./functions/addStyle"
 
 export default function addContact(){
     removeStyle(home);
-    removeStyle(contact);
-    addStyle(menu);
+    removeStyle(menu);
+    addStyle(contact);
 
     midsection.replaceChildren();
 
-    midsection.textContent = "HELLO THERE"
+    midsection.textContent = "Hello World"
 } 
