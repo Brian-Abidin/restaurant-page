@@ -55,6 +55,9 @@ button{
   height: 100%;
 }
 
+.midsection{
+}
+
 .description{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
