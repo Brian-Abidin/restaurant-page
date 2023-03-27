@@ -8,6 +8,12 @@ const menu = document.createElement("button");
 const contact = document.createElement("button");
 const emptyheader = document.createElement("div");
 const midsection = document.createElement("div");
+const leftMenu = document.createElement("div");
+const middleMenu = document.createElement("div");
+const rightMenu = document.createElement("div");
+const menuItem1 = document.createElement("div");
+const menuItem2 = document.createElement("div");
+const menuItem3 = document.createElement("div");
 const frontImage = document.createElement("div");
 const description = document.createElement("div");
 const descText = document.createElement("div");
@@ -28,6 +34,14 @@ menu.classList.add("menu");
 contact.classList.add("contact");
 emptyheader.classList.add("emptyheader");
 midsection.classList.add("midsection");
+leftMenu.classList.add("leftMenu");
+middleMenu.classList.add("middleMenu");
+rightMenu.classList.add("rightMenu");
+menuItem1.classList.add("menuItem1");
+menuItem2.classList.add("menuItem2");
+menuItem3.classList.add("menuItem3");
+
+
 frontImage.classList.add("frontImage");
 description.classList.add("description");
 descText.classList.add("descText");
@@ -50,6 +64,12 @@ export {
     contact, 
     emptyheader,
     midsection,
+    leftMenu,
+    middleMenu,
+    rightMenu,
+    menuItem1,
+    menuItem2,
+    menuItem3,
     frontImage, 
     description,
     descText,
@@ -58,5 +78,5 @@ export {
     descImage,
     footer,
     image1, 
-    image2
+    image2,
 }
