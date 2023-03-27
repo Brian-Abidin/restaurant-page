@@ -38,7 +38,8 @@ footer.classList.add("footer");
 image1.classList.add("image1");
 image2.classList.add("image2");
 
-export default {
+
+export {
     content,
     wrapper,
     header,
