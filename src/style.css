@@ -71,19 +71,20 @@ button{
   padding-bottom: 10px;
 }
 
-
-.leftItem2{
+.leftItem2, .leftItem3{
   font-weight: 700;
   font-size: 1.5rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
-.middleItem2{
+.middleItem2, .middleItem3{
   font-size: 1.25rem;
 }
 
-.rightItem2{
+.rightItem2, .rightItem3{
   width: 200px;
   height: 200px;
 }
