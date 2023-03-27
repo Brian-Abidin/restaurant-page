@@ -15,11 +15,11 @@ const rightItem1 = document.createElement("div");
 
 const leftItem2= document.createElement("div");
 const middleItem2 = document.createElement("div");
-const rightItem2 = document.createElement("div");
+const rightItem2 = document.createElement("img");
 
 const leftItem3 = document.createElement("div");
 const middleItem3 = document.createElement("div");
-const rightItem3 = document.createElement("div");
+const rightItem3 = document.createElement("img");
 
 const menuItem1 = document.createElement("div");
 const menuItem2 = document.createElement("div");
