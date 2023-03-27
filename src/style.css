@@ -75,6 +75,8 @@ button{
 .leftItem2{
   font-weight: 700;
   font-size: 1.5rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .middleItem2{
