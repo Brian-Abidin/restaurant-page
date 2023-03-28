@@ -15,7 +15,7 @@ export default function addContact(){
     midsection.style.setProperty("font-size", "calc(1rem + 0.2vw)");
 
     const phoneNum = document.createElement("div");
-    const location = document.createElement("div");
+    const locate = document.createElement("div");
     const social = document.createElement("div");
     const socialTitle = document.createElement("div");
     const socialLinks = document.createElement("div");
@@ -28,11 +28,11 @@ export default function addContact(){
     twitter.classList.add("twitter");
     instagram.classList.add("instagram");
     facebook.classList.add("facebook");
-    location.classList.add("location");
+    locate.classList.add("locate");
     phoneNum.classList.add("phoneNum")
 
     midsection.appendChild(phoneNum);
-    midsection.appendChild(location);
+    midsection.appendChild(locate);
     midsection.appendChild(social);
 
     social.appendChild(socialTitle);
@@ -42,7 +42,7 @@ export default function addContact(){
     socialLinks.appendChild(instagram);
     socialLinks.appendChild(facebook);
 
-    location.textContent = "Located on 123 Imagine Blvd Imagination, AB 12345"
+    locate.textContent = "Located on 123 Imagine Blvd Imagination, AB 12345"
     phoneNum.textContent = "Call us: (123)-123-1234"
     social.style.display = "grid";
     social.style.gridTemplateRows = "1fr 1fr"
@@ -55,4 +55,16 @@ export default function addContact(){
     socialLinks.style.gap = "10px"
 
     socialTitle.textContent = "Follow us on our Social Media!"
+
+    twitter.onclick = function link (){
+        window.open("https://twitter.com");
+    }
+
+    facebook.onclick = function link (){
+        window.open("https://facebook.com");
+    }
+
+    instagram.onclick = function link (){
+        window.open("https://instagram.com");
+    }
 } 
