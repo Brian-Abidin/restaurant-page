@@ -3,64 +3,90 @@ on click loads the HTML elements
 create HTML elements. removes the divs that are showing
 and adds the divs for the Menu tab */
 
-import {home, menu, contact, midsection, leftItem1, 
-        middleItem1, rightItem1, menuItem1, menuItem2,
-        menuItem3, itemPrice2, leftItem2, middleItem2, rightItem2, 
-        itemName2, leftItem3, itemName3, itemPrice3, rightItem3,
-        middleItem3} from  "./functions/domElements"
+import {home, menu, contact, midsection} from  "./functions/domElements"
 import removeStyle from "./functions/removeStyle"
 import addStyle from "./functions/addStyle"
 import spaghetti from "./images/spaghetti.jpg"
 import lobster from "./images/lobster.png"
 
+function addItem(){
+    const child = midsection.childElementCount;
+    for(let i = child - 1; i<(child); i+=1 ){
+        const menuItem = document.createElement("div");
+        const leftItem = document.createElement("div");
+        const middleItem = document.createElement("div");
+        const rightItem = document.createElement("img");
+        const itemPrice = document.createElement("div");
+        const itemName = document.createElement("div");
+
+        menuItem.setAttribute("id", `menuItem${child+1}`);
+        leftItem.setAttribute("id", `leftItem${child+1}`);
+        middleItem.setAttribute("id", `middleItem${child+1}`);
+        rightItem.setAttribute("id", `rightItem${child+1}`);
+        itemPrice.setAttribute("id", `itemPrice${child+1}`);
+        itemName.setAttribute("id", `itemName${child+1}`);
+
+        midsection.appendChild(menuItem);
+        menuItem.appendChild(leftItem);
+        leftItem.appendChild(itemName);
+        leftItem.appendChild(itemPrice);
+        menuItem.appendChild(middleItem);
+        menuItem.appendChild(rightItem);
+    }
+}
+
+function styleMenu(){
+    midsection.style.display = "grid";
+    midsection.style.marginLeft = "200px";
+    midsection.style.marginRight = "200px";
+    midsection.style.gridTemplateRows = "200px, repeat(auto-fit, 1fr)";
+    midsection.style.gap = "10px";
+    midsection.style.minWidth = "540px";
+}
+
+
 export default function addMenu(){
+
     removeStyle(home);
     removeStyle(contact);
     addStyle(menu);
 
     midsection.replaceChildren();
 
-    midsection.appendChild(menuItem1);
-    midsection.appendChild(menuItem2);
-    midsection.appendChild(menuItem3);
+    addItem();
+    addItem();
+    addItem();
+    addItem();
+    addItem();
+    addItem();
 
-    midsection.style.display = "grid";
-    midsection.style.marginLeft = "200px";
-    midsection.style.marginRight = "200px";
-    midsection.style.gridTemplateRows = "200px, repeat(2, )";
-    midsection.style.gap = "10px"
-    midsection.style.minWidth = "540px"
+    styleMenu();
 
-    menuItem1.appendChild(leftItem1);
-    menuItem1.appendChild(middleItem1);
-    menuItem1.appendChild(rightItem1);
+    document.getElementById("middleItem1").textContent = "Dinner";
 
-    menuItem2.appendChild(leftItem2);
-    menuItem2.appendChild(middleItem2);
-    menuItem2.appendChild(rightItem2);
+    document.getElementById("itemName2").textContent = "Spaghetti and Meatballs";
+    document.getElementById("itemPrice2").textContent = "$17.99";
+    document.getElementById("middleItem2").textContent = "A large bowl of delicious in house made spaghetti and beef meatballs with freshly made tomato and basil based sauce. Topped with italian parmesean."
+    document.getElementById("rightItem2").src = spaghetti;
 
-    leftItem2.appendChild(itemName2);
-    leftItem2.appendChild(itemPrice2);
+    document.getElementById("itemName3").textContent = "Red Lobster with Clam Chowder";
+    document.getElementById("itemPrice3").textContent = "$24.99";
+    document.getElementById("middleItem3").textContent = "A locally caught cooked Red Lobster served with a side of Clam Chowder and savory butter sauce"
+    document.getElementById("rightItem3").src = lobster;
 
-    middleItem1.textContent = "Dinner";
+    document.getElementById("itemName4").textContent = "Red Lobster with Clam Chowder";
+    document.getElementById("itemPrice4").textContent = "$24.99";
+    document.getElementById("middleItem4").textContent = "A locally caught cooked Red Lobster served with a side of Clam Chowder and savory butter sauce"
+    document.getElementById("rightItem4").src = lobster;
 
-    itemName2.textContent = "Spaghetti and Meatballs";
-    itemPrice2.textContent = "$17.99";
-    middleItem2.textContent = "A large bowl of delicious in house made spaghetti and beef meatballs with freshly made tomato and basil based sauce. Topped with italian parmesean."
-    rightItem2.src = spaghetti;
+    document.getElementById("itemName5").textContent = "Red Lobster with Clam Chowder";
+    document.getElementById("itemPrice5").textContent = "$24.99";
+    document.getElementById("middleItem5").textContent = "A locally caught cooked Red Lobster served with a side of Clam Chowder and savory butter sauce"
+    document.getElementById("rightItem5").src = lobster;
 
-    menuItem3.appendChild(leftItem3);
-    menuItem3.appendChild(middleItem3);
-    menuItem3.appendChild(rightItem3);
+    document.getElementById("itemName6").textContent = "Red Lobster with Clam Chowder";
+    document.getElementById("itemPrice6").textContent = "$24.99";
+    document.getElementById("middleItem6").textContent = "A locally caught cooked Red Lobster served with a side of Clam Chowder and savory butter sauce"
+    document.getElementById("rightItem6").src = lobster;
 
-    leftItem3.appendChild(itemName3);
-    leftItem3.appendChild(itemPrice3);
-
-    itemName3.textContent = "Red Lobster with Clam Chowder";
-    itemPrice3.textContent = "$24.99";
-    middleItem3.textContent = "A locally caught cooked Red Lobster served with a side of Clam Chowder and savory butter sauce"
-    rightItem3.src = lobster;
-
-
-    // midsection.textContent = "HELLO THERE"
 }
