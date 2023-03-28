@@ -55,7 +55,7 @@ button{
   height: 100%;
 }
 
-#menuItem1, #menuItem2, #menuItem3{
+#menuItem1{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -71,23 +71,23 @@ button{
   padding-bottom: 10px;
 }
 
-#leftItem2, #leftItem3{
+/* #leftItem2, #leftItem3{
   font-weight: 700;
   font-size:calc(1rem + 0.5vw);
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-items: center;
-}
+} */
 
-#middleItem2, #middleItem3{
+/* #middleItem2, #middleItem3{
   font-size:calc(1rem + 0.2vw);
 }
 
 #rightItem2, #rightItem3{
   width: 200px;
   height: 200px;
-}
+} */
 
 /* .leftMenu, .middleMenu, .rightMenu{
   font-size: larger;
