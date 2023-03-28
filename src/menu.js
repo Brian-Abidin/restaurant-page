@@ -9,6 +9,36 @@ import addStyle from "./functions/addStyle"
 import spaghetti from "./images/spaghetti.jpg"
 import lobster from "./images/lobster.png"
 
+function styleItems(){
+    const child = midsection.childElementCount;
+    for(let i = 1; i < child; i+=1){
+        const menuItem = document.getElementById(`menuItem${i+1}`);
+        const leftItem = document.getElementById(`leftItem${i+1}`);
+        const middleItem = document.getElementById(`middleItem${i+1}`);
+        const rightItem = document.getElementById(`rightItem${i+1}`);
+        // const itemPrice = document.getElementById(`itemPrice${i+1}`);
+        // const itemName = document.getElementById(`itemName${i+1}`);
+
+        menuItem.style.display = "grid";
+        menuItem.style.gridTemplateColumns = "repeat(3, 1fr)";
+        menuItem.style.justifyItems = "center";
+        menuItem.style.alignItems = "center";
+
+        leftItem.style.fontWeight = "700";
+        leftItem.style.fontSize = "calc(1rem + 0.5vw)";
+        leftItem.style.display = "grid";
+        leftItem.style.gridTemplateRows = "1fr 1fr";
+        leftItem.style.alignItems = "center";
+        leftItem.style.justifyItems = "center";
+
+        middleItem.style.setProperty("font-size", "calc(1rem + 0.2vw)");
+
+        rightItem.style.width = "200px";
+        rightItem.style.height = "200px";
+    }
+}
+
+
 function addItem(num){
     for(let i = 0; i < num; i+=1 ){
         const menuItem = document.createElement("div");
@@ -32,7 +62,9 @@ function addItem(num){
         menuItem.appendChild(middleItem);
         menuItem.appendChild(rightItem);
     }
+    styleItems();
 }
+
 
 function styleMenu(){
     midsection.style.display = "grid";
