@@ -55,41 +55,39 @@ button{
   height: 100%;
 }
 
-.menuItem1, .menuItem2, .menuItem3{
+#menuItem1, #menuItem2, #menuItem3{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
 }
 
-.middleItem1{
+#middleItem1{
   font-size: 2rem;
 }
 
-.menuItem1{
+#menuItem1{
   border-bottom: 2px solid black;
   padding-bottom: 10px;
 }
 
-.leftItem2, .leftItem3{
+#leftItem2, #leftItem3{
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size:calc(1rem + 0.5vw);
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-items: center;
 }
 
-.middleItem2, .middleItem3{
-  font-size: 1.25rem;
+#middleItem2, #middleItem3{
+  font-size:calc(1rem + 0.2vw);
 }
 
-.rightItem2, .rightItem3{
+#rightItem2, #rightItem3{
   width: 200px;
   height: 200px;
 }
-
-
 
 /* .leftMenu, .middleMenu, .rightMenu{
   font-size: larger;
