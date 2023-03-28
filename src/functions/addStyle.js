@@ -1,5 +1,3 @@
-import "../home"
-
 export default function addStyle(text){
     const button = text;
     button.style.borderBottom = "5px solid Black";
