@@ -1,6 +1,6 @@
 import {content, wrapper, header, title, rightlinks, home, menu, contact, 
         emptyheader, midsection, frontImage, image1, image2, description, 
-        descText, descText2, descTitle, descImage, footer} from  "../domElements"
+        descText, descText2, descTitle, descImage, footer} from  "./domElements"
 import surfandturf from "../images/surfandturf.jpeg"
 import seafood from "../images/seafood.jpg"
 

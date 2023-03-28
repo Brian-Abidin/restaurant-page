@@ -4,9 +4,9 @@ inside a function and the funciton runs on
 window load. */
 
 import {home, menu, contact, midsection, frontImage, image1, image2, 
-        description, descText, descText2, descTitle, descImage} from  "./domElements"
+        description, descText, descText2, descTitle, descImage} from  "./functions/domElements"
 import seafood from "./images/seafood.jpg";
-import surfandturf from "./images/surfandturf.jpeg"
+import surfandturf from "./images/surfandturf.jpeg";
 import removeStyle from "./functions/removeStyle";
 import addStyle from "./functions/addStyle";
 

@@ -1,4 +1,4 @@
-import {home, menu, contact, midsection} from  "./domElements"
+import {home, menu, contact, midsection} from  "./functions/domElements"
 import removeStyle from "./functions/removeStyle"
 import addStyle from "./functions/addStyle"
 

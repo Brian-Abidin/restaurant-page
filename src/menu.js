@@ -7,7 +7,7 @@ import {home, menu, contact, midsection, leftItem1,
         middleItem1, rightItem1, menuItem1, menuItem2,
         menuItem3, itemPrice2, leftItem2, middleItem2, rightItem2, 
         itemName2, leftItem3, itemName3, itemPrice3, rightItem3,
-        middleItem3} from  "./domElements"
+        middleItem3} from  "./functions/domElements"
 import removeStyle from "./functions/removeStyle"
 import addStyle from "./functions/addStyle"
 import spaghetti from "./images/spaghetti.jpg"

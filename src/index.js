@@ -1,8 +1,8 @@
 import "./style.css";
 import load from "./functions/onLoad";
-import addMenu from "./menu"
-import addContact from "./contact"
-import {home, menu, contact} from "./domElements"
+import addMenu from "./menu";
+import addContact from "./contact";
+import {home, menu, contact} from "./functions/domElements";
 import addHome from "./home";
 
 load();
