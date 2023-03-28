@@ -131,6 +131,35 @@ button{
   font-weight: 700;
 }
 
+.location, .phoneNum, .socials{
+  font-weight: 700;
+}
+
+.twitter{
+  background-image: url(../src/images/twitter.png);
+}
+
+.instagram{
+  background-image: url(../src/images/instagram.png);
+}
+
+.facebook{
+  background-image: url(../src/images/facebook.png);
+}
+
+.twitter, .instagram, .facebook{
+  border-style: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
+
+.twitter:hover, .instagram:hover, .facebook:hover{
+  cursor: grab;
+}
+  
+
 .footer{
   background-color: black;
   color: white;
