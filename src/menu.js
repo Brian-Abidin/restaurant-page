@@ -9,9 +9,8 @@ import addStyle from "./functions/addStyle"
 import spaghetti from "./images/spaghetti.jpg"
 import lobster from "./images/lobster.png"
 
-function addItem(){
-    const child = midsection.childElementCount;
-    for(let i = child - 1; i<(child); i+=1 ){
+function addItem(num){
+    for(let i = 0; i < num; i+=1 ){
         const menuItem = document.createElement("div");
         const leftItem = document.createElement("div");
         const middleItem = document.createElement("div");
@@ -19,12 +18,12 @@ function addItem(){
         const itemPrice = document.createElement("div");
         const itemName = document.createElement("div");
 
-        menuItem.setAttribute("id", `menuItem${child+1}`);
-        leftItem.setAttribute("id", `leftItem${child+1}`);
-        middleItem.setAttribute("id", `middleItem${child+1}`);
-        rightItem.setAttribute("id", `rightItem${child+1}`);
-        itemPrice.setAttribute("id", `itemPrice${child+1}`);
-        itemName.setAttribute("id", `itemName${child+1}`);
+        menuItem.setAttribute("id", `menuItem${i+1}`);
+        leftItem.setAttribute("id", `leftItem${i+1}`);
+        middleItem.setAttribute("id", `middleItem${i+1}`);
+        rightItem.setAttribute("id", `rightItem${i+1}`);
+        itemPrice.setAttribute("id", `itemPrice${i+1}`);
+        itemName.setAttribute("id", `itemName${i+1}`);
 
         midsection.appendChild(menuItem);
         menuItem.appendChild(leftItem);
@@ -53,13 +52,7 @@ export default function addMenu(){
 
     midsection.replaceChildren();
 
-    addItem();
-    addItem();
-    addItem();
-    addItem();
-    addItem();
-    addItem();
-
+    addItem(6);
     styleMenu();
 
     document.getElementById("middleItem1").textContent = "Dinner";
@@ -88,5 +81,4 @@ export default function addMenu(){
     document.getElementById("itemPrice6").textContent = "$24.99";
     document.getElementById("middleItem6").textContent = "A locally caught cooked Red Lobster served with a side of Clam Chowder and savory butter sauce"
     document.getElementById("rightItem6").src = lobster;
-
 }
