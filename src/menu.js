@@ -25,7 +25,7 @@ function styleItems(){
         menuItem.style.alignItems = "center";
 
         leftItem.style.fontWeight = "700";
-        leftItem.style.fontSize = "calc(1rem + 0.5vw)";
+        leftItem.style.setProperty("font-size", "calc(1rem + 0.5vw)");
         leftItem.style.display = "grid";
         leftItem.style.gridTemplateRows = "1fr 1fr";
         leftItem.style.alignItems = "center";
@@ -73,6 +73,7 @@ function styleMenu(){
     midsection.style.gridTemplateRows = "200px, repeat(auto-fit, 1fr)";
     midsection.style.gap = "10px";
     midsection.style.minWidth = "540px";
+    midsection.style.paddingBottom = "50px";
 }
 
 
