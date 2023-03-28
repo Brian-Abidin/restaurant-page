@@ -4,8 +4,15 @@ body{
 }
 
 .wrapper{
-  display: grid;
-  grid-template-rows: 100px 1fr 100px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  /* grid-template-rows: 100px 1fr 100px; */
+}
+
+.header, .footer{
+  height: 90px;
 }
 
 .title {
@@ -48,6 +55,10 @@ button{
 .frontImage{
   margin: 0;
   padding: 0;
+}
+
+.midsection{
+  height:100%;
 }
 
 .image1, .image2{
