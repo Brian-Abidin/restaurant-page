@@ -8,6 +8,8 @@ import removeStyle from "./functions/removeStyle"
 import addStyle from "./functions/addStyle"
 import spaghetti from "./images/spaghetti.jpg"
 import lobster from "./images/lobster.png"
+import surfandturf from "./images/lobandsteak.jpg"
+import octopus from "./images/octopus.jpeg"
 
 function styleItems(){
     const child = midsection.childElementCount;
@@ -85,7 +87,7 @@ export default function addMenu(){
 
     midsection.replaceChildren();
 
-    addItem(6);
+    addItem(5);
     styleMenu();
 
     document.getElementById("middleItem1").textContent = "Dinner";
@@ -100,18 +102,13 @@ export default function addMenu(){
     document.getElementById("middleItem3").textContent = "A locally caught cooked Red Lobster served with a side of Clam Chowder and savory butter sauce"
     document.getElementById("rightItem3").src = lobster;
 
-    document.getElementById("itemName4").textContent = "Red Lobster with Clam Chowder";
-    document.getElementById("itemPrice4").textContent = "$24.99";
-    document.getElementById("middleItem4").textContent = "A locally caught cooked Red Lobster served with a side of Clam Chowder and savory butter sauce"
-    document.getElementById("rightItem4").src = lobster;
+    document.getElementById("itemName4").textContent = "Surf and Turf";
+    document.getElementById("itemPrice4").textContent = "$31.99";
+    document.getElementById("middleItem4").textContent = "Fresh cooked lobster tail served with a 8 oz filet mignon steak covered in a butter garlic sauce made in house."
+    document.getElementById("rightItem4").src = surfandturf;
 
-    document.getElementById("itemName5").textContent = "Red Lobster with Clam Chowder";
-    document.getElementById("itemPrice5").textContent = "$24.99";
-    document.getElementById("middleItem5").textContent = "A locally caught cooked Red Lobster served with a side of Clam Chowder and savory butter sauce"
-    document.getElementById("rightItem5").src = lobster;
-
-    document.getElementById("itemName6").textContent = "Red Lobster with Clam Chowder";
-    document.getElementById("itemPrice6").textContent = "$24.99";
-    document.getElementById("middleItem6").textContent = "A locally caught cooked Red Lobster served with a side of Clam Chowder and savory butter sauce"
-    document.getElementById("rightItem6").src = lobster;
+    document.getElementById("itemName5").textContent = "Hot Dog Octopus Special";
+    document.getElementById("itemPrice5").textContent = "$19.99";
+    document.getElementById("middleItem5").textContent = "Hot dog made from 100% wagyu beef cut into a shape of an octopus on top of a lettuce, carrot, and spinach salad."
+    document.getElementById("rightItem5").src = octopus;
 }
