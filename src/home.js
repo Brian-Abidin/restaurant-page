@@ -1,8 +1,3 @@
-/* on window load, load the home page. 
-home button is highlighted. DOM elements are 
-inside a function and the funciton runs on
-window load. */
-
 import {home, menu, contact, midsection, frontImage, image1, image2, 
         description, descText, descText2, descTitle, descImage} from  "./functions/domElements"
 import seafood from "./images/seafood.jpg";
