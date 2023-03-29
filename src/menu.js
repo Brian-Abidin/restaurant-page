@@ -93,7 +93,7 @@ export default function addMenu(){
 
     document.getElementById("itemName3").textContent = "Red Lobster with Clam Chowder";
     document.getElementById("itemPrice3").textContent = "$24.99";
-    document.getElementById("middleItem3").textContent = "A locally caught cooked Red Lobster served with a side of Clam Chowder and savory butter sauce"
+    document.getElementById("middleItem3").textContent = "A locally caught cooked red lobster served with a side of clam chowder and savory butter sauce."
     document.getElementById("rightItem3").src = lobster;
 
     document.getElementById("itemName4").textContent = "Surf and Turf";
