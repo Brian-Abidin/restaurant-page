@@ -86,6 +86,7 @@ export default function addMenu(){
     addStyle(menu);
 
     midsection.replaceChildren();
+    midsection.style = "";
 
     addItem(5);
     styleMenu();
