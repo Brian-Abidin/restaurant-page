@@ -13,8 +13,6 @@ function styleItems(){
         const leftItem = document.getElementById(`leftItem${i+1}`);
         const middleItem = document.getElementById(`middleItem${i+1}`);
         const rightItem = document.getElementById(`rightItem${i+1}`);
-        // const itemPrice = document.getElementById(`itemPrice${i+1}`);
-        // const itemName = document.getElementById(`itemName${i+1}`);
 
         menuItem.style.display = "grid";
         menuItem.style.gridTemplateColumns = "repeat(3, 1fr)";
